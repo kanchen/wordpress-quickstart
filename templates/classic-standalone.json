@@ -21,7 +21,7 @@
         {
             "name": "QUICKSTART_REPOSITORY_URL",
             "description": "The URL of the quickstart Git repository.",
-            "value": "https://github.com/openshift-evangelists/wordpress-quickstart",
+            "value": "https://github.com/kanchen/wordpress-quickstart",
             "required": true
         },
         {
@@ -228,7 +228,7 @@
 				    }
                                 },
 				"readinessProbe": {
-				    "failureThreshold": 3,
+				    "failureThreshold": 9,
 				    "httpGet": {
 					"path": "/wp-admin/install.php",
 					"port": 8080,
@@ -245,7 +245,7 @@
 				    "timeoutSeconds": 1
 				},
 				"livenessProbe": {
-				    "failureThreshold": 3,
+				    "failureThreshold": 9,
 				    "httpGet": {
 					"path": "/wp-admin/install.php",
 					"port": 8080,
